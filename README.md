@@ -1,2 +1,2 @@
 # camiguin_lanzones_resort
-the website for Camiguin Lanzones Resort
+The official website for Camiguin Lanzones Resort.
