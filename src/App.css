@@ -1,0 +1,440 @@
+:root {
+  --navBar-border: whitesmoke solid 2px;
+  --navBar-width: 10%;
+  --onPage-borders: rgb(221, 216, 216) solid 0.5px;
+  --button-color1: rgba(10, 93, 248, 0.864);
+  --button-color2: rgb(247, 179, 52);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Shippori Mincho B1", serif;
+  position: relative;
+  text-decoration: none;
+  color: grey;
+
+  /* font-size: 15px; */
+}
+
+a {
+  color: grey;
+  margin: 20px;
+  font-size: 60%;
+  transition: 0.1s ease-in-out;
+  /* border: black solid 5px; */
+}
+
+.drop-down-menu {
+  border: solid black 2px;
+}
+#Reservation-booking-drop-down-menu {
+  border: solid black 2px;
+}
+
+/* navbar */
+.navbar {
+  border: var(--navBar-border);
+  border-left: none;
+  border-right: none;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 5;
+}
+
+.rooms-container {
+  position: relative;
+  width: 4%;
+  float: left;
+  top: 0;
+}
+
+.room-options {
+  position: absolute;
+  float: left;
+  width: 100%;
+}
+
+.room-options-hide {
+  display: hide;
+  position: absolute;
+  float: left;
+  width: 100%;
+  visibility: hidden;
+}
+
+.room-options ul li {
+  list-style: none;
+}
+.room-options-hide ul li {
+  list-style: none;
+}
+
+.reservation-and-booking-container {
+  position: relative;
+  width: 10%;
+  height: 20%;
+  float: left;
+  top: 0;
+}
+
+.reservation-and-booking-options {
+  position: absolute;
+  float: left;
+  width: 300%;
+}
+
+.reservation-and-booking-options ul li {
+  list-style: none;
+}
+
+.hide-reservation-and-booking-options ul li {
+  list-style: none;
+}
+
+.hide-reservation-and-booking-options {
+  position: relative;
+  width: 5%;
+  float: left;
+  top: 0;
+  visibility: hidden;
+}
+
+.gallery-container {
+  position: relative;
+  width: 5%;
+  float: left;
+  top: 0;
+}
+
+.gallery-options {
+  position: absolute;
+  float: left;
+  width: 188%;
+}
+
+.gallery-options ul li {
+  list-style: none;
+}
+
+.hide-gallery-options ul li {
+  list-style: none;
+}
+
+.hide-gallery-options {
+  position: relative;
+  width: 5%;
+  float: left;
+  top: 0;
+  visibility: hidden;
+}
+
+.link-divs {
+  width: 4%;
+  float: left;
+  top: 0;
+}
+
+#drop-down-1 {
+  position: relative;
+}
+
+#drop-down-rooms {
+  position: absolute;
+  width: 100%;
+  border: black solid 2px;
+}
+
+#drop-down-rooms li {
+  list-style: none;
+}
+
+a:hover {
+  transition: 0.2s ease-in-out;
+  color: orange;
+}
+
+.wrapper {
+  height: 90px;
+  width: 100%;
+}
+
+.link-container {
+  justify-content: space-around;
+  top: 60%;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+}
+
+#logo-container {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+}
+
+#logo-container img {
+  border: var(--navBar-border);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+/* homepage */
+.homepage-picture-container {
+  position: relative;
+  margin: 0;
+  background: no-repeat center center;
+  background-size: cover;
+  height: 45vh;
+  display: inline-block;
+  width: 100%;
+}
+
+.homepage-picture-container img {
+  height: 100%;
+  width: 100%;
+  grid-template: repeat(auto-fit);
+}
+
+.line {
+  border: var(--onPage-borders);
+  margin-top: 1vh;
+  border-top: none;
+  margin-top: 3.5vh;
+  border-left: none;
+  border-right: none;
+  margin-right: 3vh;
+  margin-left: 1vh;
+  height: 25px;
+}
+
+/* homepage-availabilty search */
+
+.line-icon-container {
+  position: absolute;
+  bottom: -1vh;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#line-spacing-for-calender-icon {
+  margin-left: 5vh;
+}
+
+#icon-availability-search-occupancy {
+  transform: translate(-1vh, -2.5vh);
+  float: right;
+}
+#icon-availability-search-check-ins-outs {
+  transform: translate(-0.6vh, -2.5vh);
+  float: right;
+}
+
+.room-and-occupancy {
+  border: var(--onPage-borders);
+  margin-left: 1.5vh;
+  margin-top: 0;
+  width: 30%;
+  padding: 0;
+  height: 100%;
+  float: left;
+}
+
+.occupacy-paragraph-container {
+  float: left;
+  bottom: 0px;
+}
+.room-and-occupancy p {
+  margin-top: 0.3vh;
+  font-size: 1.8vh;
+  margin-left: 1vh;
+}
+
+.welcome-container {
+  margin-top: 1vh;
+  color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.homepage-picture-container h2 {
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.about-container {
+  /* visibility: hidden; */
+}
+
+.check-availabilty-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  margin: 0;
+}
+
+#availability-search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  /* min-width: 70%; */
+  border: var(--onPage-borders);
+  /* max-height: 6px; */
+  /* min-height: 21%; */
+  height: 20%;
+  border-radius: 2vh;
+  min-width: 1000px;
+}
+
+#availability-search-sub-container {
+  justify-content: space-around;
+  transform: scale(0.98, 0.85);
+  height: 100%;
+  width: 100%;
+}
+
+.check-in-out-date-container {
+  float: left;
+  border: var(--onPage-borders);
+  margin-left: 0;
+  margin-top: 0;
+  width: 25%;
+  padding: 0;
+  height: 100%;
+  float: left;
+  border-left: none;
+}
+
+.special-rates-container {
+  float: left;
+  border: var(--onPage-borders);
+  margin-left: 0;
+  margin-top: 0;
+  width: 25%;
+  padding: 0;
+  height: 100%;
+  float: left;
+  border-left: none;
+}
+.button-search {
+  float: left;
+  border: var(--onPage-borders);
+  margin-left: 0;
+  margin-top: 0;
+  width: 18%;
+  padding: 0;
+  height: 100%;
+  float: left;
+  margin-right: 0.1vh;
+  position: relative;
+  background: var(--button-color2);
+  border: var(--button-color2);
+  border-radius: 1vh;
+}
+
+.button-search p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.specials-rates-paragraph {
+  float: left;
+  margin-bottom: 0px;
+  margin-left: 2vh;
+}
+
+#spacing-for-special-rates {
+  margin-left: 2vh;
+}
+
+.check-in-paragraph {
+  float: left;
+  margin-bottom: 0px;
+  margin-left: 5vh;
+}
+
+#check-in-date {
+  float: left;
+}
+
+#adults-paragraph {
+  float: left;
+  transform: translateX(5vh);
+}
+
+#adults-number-input {
+  float: left;
+  transform: translateX(5vh);
+}
+
+#room-paragraph {
+  float: left;
+}
+#room-number-input {
+  float: left;
+}
+
+#children-paragraph {
+  transform: translateX(-1vh);
+  float: right;
+}
+#children-number-input {
+  transform: translateX(-9vh);
+  float: right;
+}
+
+#check-out-date {
+  transform: translateX(-0.5vh);
+  float: right;
+}
+
+.check-out-paragraph {
+  margin-bottom: 0px;
+  float: right;
+  margin-right: 4.1vh;
+}
+
+.calender-icon-container {
+  transform: translateY(2.8vh);
+  float: left;
+  margin-left: 2vh;
+  margin-top: 0.5vh;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  margin-top: 2.5vh;
+  text-align: center;
+  position: relative;
+  font-size: 3vh;
+}
+
+#blocker {
+  border: black solid 2px;
+}
