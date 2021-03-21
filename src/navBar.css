@@ -1,0 +1,299 @@
+#Reservation-booking-drop-down-menu {
+  border: solid black 2px;
+}
+
+/* navbar */
+.navbar {
+  border: var(--navBar-border);
+  border-left: none;
+  border-right: none;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 5;
+}
+
+.rooms-container {
+  position: relative;
+  /* width: 12%; */
+  top: 0;
+  /* border: solid 2px black; */
+}
+
+.room-options {
+  position: absolute;
+  width: 120%;
+  /* margin-right: 50px; */
+  border: solid black 2px;
+}
+.hide-room-options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  /* margin-right: 50px; */
+  border: solid black 2px;
+}
+
+.room-options a {
+  display: inline-block;
+  font-size: 12px;
+}
+.hide-room-options a {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.room-options-hide {
+  display: hide;
+  position: absolute;
+  float: left;
+  width: 100%;
+  visibility: hidden;
+}
+
+.room-options ul li {
+  list-style: none;
+}
+.room-options-hide ul li {
+  list-style: none;
+}
+
+.reservation-and-booking-container {
+  position: relative;
+  /* height: 30px; */
+  top: 0;
+  border: solid black 2px;
+  bottom: 0px;
+  height: 188px;
+}
+
+/* .reservation-and-booking-options-container {
+  position: absolute;
+  width: 180%;
+} */
+.options-rsvn-my-booking {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  opacity: 1;
+  animation: show_options 0.3s;
+}
+
+@keyframes show_options {
+  0% {
+    z-index: -5000;
+    transform: translateX(4px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  25% {
+    z-index: -50000;
+    transform: translateX(4px);
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  50% {
+    z-index: -50000;
+    transform: translateX(4px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.hide-options-rsvn-my-booking {
+  transform: translateY(-200px);
+  margin-left: 2px;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  opacity: 0;
+  animation: out 1.3s;
+}
+
+.hide-options-rsvn-my-booking a {
+  font-size: 12px;
+}
+
+@keyframes out {
+  0% {
+    transform: translateX(4px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(4px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(4px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
+.make-a-reservation {
+  /* border-right: solid grey 1.5px;
+  border-left: solid grey 1.5px; */
+  border-top: solid grey 1.8px;
+  background: whitesmoke;
+  /* border: solid black 2px; */
+  width: 100%;
+  height: 70px;
+  /* margin: 50px; */
+}
+
+/* .make-a-reservation a {
+  margin: auto;
+} */
+
+#options-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.my-booking {
+  border-top: grey 1.8px solid;
+  border-bottom: grey 1.8px solid;
+  width: 100%;
+  background: whitesmoke;
+  height: 70px;
+}
+
+.my-booking a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  position: absolute;
+}
+
+.options-rsvn-my-booking a {
+  font-size: 12px;
+}
+
+.reservation-and-booking-options ul li {
+  list-style: none;
+}
+
+.hide-reservation-and-booking-options ul li {
+  list-style: none;
+}
+
+.hide-reservation-and-booking-options {
+  position: relative;
+  width: 5%;
+  float: left;
+  top: 0;
+  visibility: hidden;
+}
+
+.gallery-container {
+  /* position: relative; */
+  /* float: left; */
+  top: 0;
+  /* border: solid black 2px; */
+  /* width: 90px; */
+  /* height: 30px; */
+}
+
+.gallery-options {
+  position: absolute;
+  float: left;
+  width: 188%;
+}
+
+.gallery-options ul li {
+  list-style: none;
+}
+
+.hide-gallery-options ul li {
+  list-style: none;
+}
+
+.hide-gallery-options {
+  position: relative;
+  width: 5%;
+  float: left;
+  top: 0;
+  visibility: hidden;
+}
+
+.link-divs {
+  top: 0;
+  /* border: solid 2px black; */
+}
+
+#drop-down-1 {
+  position: relative;
+}
+
+#drop-down-rooms {
+  position: absolute;
+  width: 100%;
+  border: black solid 2px;
+}
+
+#drop-down-rooms li {
+  list-style: none;
+}
+
+a:hover {
+  transition: 0.2s ease-in-out;
+  color: orange;
+}
+
+.wrapper {
+  height: 90px;
+  width: 100%;
+}
+
+.link-container {
+  top: 50px;
+  /* right: 100px; */
+  /* bottom: 0; */
+  /* border: solid 2px black; */
+  width: 100%;
+  height: -6px;
+  display: table;
+  table-layout: fixed;
+}
+
+.link-container div {
+  float: right;
+  display: table-cell;
+  text-align: center;
+  margin: 0 2% 0 0;
+}
+
+#logo-container {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+}
+
+#logo-container img {
+  border: var(--navBar-border);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+}
+
+#blocker {
+  border: black solid 2px;
+}
+
+/* #availability-search-container div {
+  display: table-cell;
+  text-align: center;
+} */
