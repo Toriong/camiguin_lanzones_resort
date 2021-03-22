@@ -1,0 +1,27 @@
+:root {
+  --navBar-border: whitesmoke solid 2px;
+  --navBar-width: 10%;
+  --onPage-borders: rgb(221, 216, 216) solid 0.5px;
+  --button-color1: rgba(10, 93, 248, 0.864);
+  --button-color2: rgb(247, 179, 52);
+  --options-menu-background-color: whitesmoke;
+  --options-menu-border-color: grey 1.8px solid;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Shippori Mincho B1", serif;
+  position: relative;
+  text-decoration: none;
+  color: grey;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 15px;
+}
